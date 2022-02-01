@@ -1,0 +1,61 @@
+package calculatorassignment;
+import java.io.*;
+import java.util.Scanner;
+import java.lang.Math;
+public class operations 
+{
+	public static void main(String[] args)
+ {
+		
+	
+	double num1;
+	double num2;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the values");
+	num1=sc.nextDouble();
+	num2=sc.nextDouble();
+	System.out.println("Enter the characters");
+	char op=sc.next().charAt(0);
+	double o=0;
+	switch(op)
+  {
+	case'+':
+	{
+		 o=num1+num2;
+		 System.out.println("answer:" +o);
+		break;
+	}
+	case '-':
+	{
+		o=num1-num2;
+		System.out.println("answer:" +o);
+		break;
+	}
+	case '*':
+	{
+		o=num1*num2;
+		System.out.println("answer:"+o);
+		break;
+	}
+	case '/':
+	{
+		o=num1/num2;
+		System.out.println("answer:"+o);
+		break;
+	}
+	default :
+	{
+		System.out.println("wrong input");
+		break;
+	}
+   }
+ }
+}	
+	
+	
+	
+	
+	
+	
+
+
